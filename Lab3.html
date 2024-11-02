@@ -1,92 +1,78 @@
-
 <!DOCTYPE html>
 <html>
-    <head>
-        
-       <link rel="stylesheet" href="lab3.css">
-        
-
-    </head>
-   
+<head>
+    <link rel="stylesheet" href="lab3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kablammo&family=Oxanium:wght@200..800&family=Prociono&display=swap" rel="stylesheet">
+    <a href="#" class="scroll-to-top" id="scrollToTopBtn" title="Volver al inicio">&#8593;</a>
+</head>
 <body>
     <header>
-        <h1>Contacto </h1>
+        <h1>Contacto</h1>
         <p>Por favor ingrese sus datos.</p>
     </header>
     <nav>
         <p>Ir a <a href="index.html">Inicio</a></p>
     </nav>
     
-   
-    
     <section>
-        <form action ="/contact.php" method="post">
+        <form action="/contact.php" method="post">
             <fieldset>
                 <legend>Datos Personales</legend>
-                <p><label>Nombre:  <input name="Nombre" maxlength="20" required>>  </p>
-                <p><label>Apellido: <input name="Apellido" maxlength="20"> </p>
+                <p><label>Nombre: <input name="Nombre" maxlength="20" required></label></p>
+                <p><label>Apellido: <input name="Apellido" maxlength="20"></label></p>
                 
-                
-               <p><label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" required>
-                </p>
+                <p><label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required></p>
                 
                 <p><label for="edad">Edad:</label>
                 <input type="number" id="edad" name="edad" min="16" max="120" required></p>
                 
-                
                 <p><label for="direccion">Dirección:</label>
-                    <textarea id="direccion" name="direccion" ></textarea></p>
-                <p>
-                    <label for="telefono">Teléfono:</label>
-                    <input type="text" id="telefono" name="telefono" pattern="[0-9]*" required placeholder="número de telefono/celular">
+                    <textarea id="direccion" name="direccion"></textarea></p>
                 
-            
-
+                <p><label for="telefono">Teléfono:</label>
+                    <input type="text" id="telefono" name="telefono" pattern="[A-Z]\d{4}[A-Z]{3}" required placeholder="número de telefono/celular"></p>
+                
                 <p>
-                    <label
-                    >Provincia: <input list="mi_provincia" name="name"
-                  /></label>
-                  <datalist id="mi_provincia">
-                    <option value="Rio Negro"></option>
-                    <option value="Neuquén"></option>
-                    <option value="Chubut"></option>
-                    <option value="Santa Cruz"></option>
-                    <option value="Tierra del Fuego"></option>
-                  </datalist>
-               
+                    <label>Provincia:
+                        <input list="mi_provincia" name="provincia" />
+                    </label>
+                    <datalist id="mi_provincia">
+                        <option value="Rio Negro"></option>
+                        <option value="Neuquén"></option>
+                        <option value="Chubut"></option>
+                        <option value="Santa Cruz"></option>
+                        <option value="Tierra del Fuego"></option>
+                    </datalist>
                 </p>
 
-                <p>
-                    <label for="codigo-postal">Código Postal:</label>
-                    <input type="text" id="codigo-postal" name="codigo-postal" pattern="^[A-Za-z]\d{4}[A-Za-z]{2}$" required  placeholder="Ejemplo: A1234ABC" >
-                
-                </p>
-                
+                <p><label for="codigo-postal">Código Postal:</label>
+                    <input type="text" id="codigo-postal" name="codigo-postal" pattern="[A-Z]\d{4}[A-Z]{3}$" required placeholder="Ejemplo: A1234ABC"></p>
             </fieldset>
 
-            <fieldset >
-                    <legend>Metodo preferido de contacto</legend>
-                    <p><label> <input type="checkbox" name="metodo" value="correo" checked>correo electronico</label></p>
-                    <p><label> <input type="checkbox" name="metodo" value="codigo">codigo-postal</label></p>
-                    <p><label> <input type="checkbox" name="metodo" value="telefono">telefono</label></p>
+            <fieldset>
+                <legend>Método preferido de contacto</legend>
+                <p><label><input type="radio" name="metodo_contacto" value="correo" checked> Correo electrónico</label></p>
+                <p><label><input type="radio" name="metodo_contacto" value="codigo"> Código postal</label></p>
+                <p><label><input type="radio" name="metodo_contacto" value="telefono"> Teléfono</label></p>
             </fieldset>
+
             <fieldset>
                 <legend>Tipo de suscripción</legend>
-                <p><label> <input type="checkbox" name="metodo" value="alertas" checked>alertas</label></p>
-                <p><label> <input type="checkbox" name="metodo" value="noticias">noticias</label></p>
-                <p><label> <input type="checkbox" name="metodo" value="promociones">promociones</label></p>
-                <p><label> <input type="checkbox" name="metodo" value="eventos">eventos</label></p>
+                <p><label><input type="checkbox" name="suscripcion" value="alertas" checked> Alertas</label></p>
+                <p><label><input type="checkbox" name="suscripcion" value="noticias"> Noticias</label></p>
+                <p><label><input type="checkbox" name="suscripcion" value="promociones"> Promociones</label></p>
+                <p><label><input type="checkbox" name="suscripcion" value="eventos"> Eventos</label></p>
             </fieldset>
 
             <fieldset>
-                <input type="button" value="Cargar">
+                <input type="submit" value="Cargar">
             </fieldset>
-
         </form>
     </section>
 
     <table>
+        <caption>Información</caption>
         <thead>
             <tr>
                 <th>Campo</th>
@@ -115,21 +101,16 @@
                 <td></td>
             </tr>
             <tr>
-                <td>Telefono</td>
+                <td>Teléfono</td>
                 <td></td>
             </tr>
             <tr>
                 <td>Provincia</td>
                 <td></td>
-                
             </tr>
         </tbody>
     </table>
     <footer>
-    
     </footer>
-
 </body>
-
-
 </html>
