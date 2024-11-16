@@ -6,17 +6,16 @@
 
 body {
     font-family: "Prociono", serif;
-   font-weight: 400;
-   font-style: normal;
+    font-weight: 400;
+    font-style: normal;
     line-height: 1.6;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    
 }
+
 body h1 {
     color: aliceblue;
-
 }
 
 header {
@@ -28,15 +27,14 @@ header {
 nav {
     background-color: #1c4e6b;
     padding: 1px;
-    position: sticky; 
-    top: 0; 
-    z-index: 10; 
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 nav h2 {
     text-align: center;
     background-color: #2286c0;
-    
 }
 
 nav a {
@@ -54,32 +52,36 @@ nav a {
 }
 
 .middle {
-    flex: 2; 
+    flex: 2;
 }
 
 .side {
     background-color: #cae5fd;
-    flex: 1; 
+    flex: 1;
+    margin-left: 5%;
 }
-div.sticky{
-position: sticky;
-top: 0;
-padding: 1px;
-background-color: #cae5fd;
-border: 1px solid #cae5fd;
+
+div.sticky {
+    position: sticky;
+    top: 0;
+    padding: 1px;
+    background-color: #cae5fd;
+    border: 1px solid #cae5fd;
 }
 
 .content-scroll {
-    max-height: 300px; 
-    overflow-y: auto; 
-    padding: 10px; 
-    background-color: #cae5fd; 
-    border: 1px solid #080606; 
+    max-height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+    background-color: #cae5fd;
+    border: 1px solid #080606;
 }
 
-.profile-image {
-    max-width: 40%;
+.profile-image
+ {
+    max-width: 30%;
     height: auto;
+
 }
 
 footer {
@@ -101,20 +103,52 @@ footer {
 
 .scroll-to-top {
     position: fixed;
-    bottom: 20px; 
-    right: 20px; 
-    width: 50px; 
-    height: 50px; 
-    background-color: #0056b3; 
-    color: white; 
-    border-radius: 50%; 
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #0056b3;
+    color: white;
+    border-radius: 50%;
     display: flex;
-    align-items: center; 
-    justify-content: center; 
-    text-decoration: none; 
-    font-size: 30px; 
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 30px;
 }
 
 .scroll-to-top:hover {
-    background-color: rgb(0, 86, 179); 
+    background-color: rgb(0, 86, 179);
+}
+
+.moreText {
+    display: none;
+    color: #0a0a0a;
+}
+
+.content {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+p {
+    font-size: 16px;
+}
+
+.more {
+    display: none;  
+    color: #080808;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
 }

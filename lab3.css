@@ -1,9 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+form {
+  width: 400px;
+  background: #24303c;
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 4px;
+  font-family: 'calibri';
+  color: white;
+  box-shadow: 7px 13px 37px #000000;
+
+}
+
 body {
     
     font-family: "Prociono", serif;
     font-weight: 400;
     font-style: normal;
-       
+    background-color: #2f67bd;
        
  }
 
@@ -13,20 +32,38 @@ header {
 }
 
 h1 {
-    color: #2c3e50; 
+    color:white; 
+}
+h2{
+   color:white ; 
+
 }
 
 nav {
     position: sticky;
     top: 0;
-    background-color: rgb(255, 255, 255); 
+    background-color: rgb(127, 197, 224); 
     z-index: 1000; 
-    box-shadow: 0 2px 5px rgba(96, 99, 228, 0.1); 
-}
-
-nav {
     text-align: center;
     margin-bottom: 20px;
+    
+}
+
+.cuadro-nav {
+    border: 2px solid #333;
+    padding: 5px; 
+    margin: 5px 0; 
+    background-color: #f7eb86; 
+}
+
+
+.cuadro-nav a {
+    text-decoration: none; 
+    color: #0066cc; 
+}
+
+.cuadro-nav a:hover {
+    color: #0044cc; 
 }
 
 nav a {
@@ -39,7 +76,7 @@ nav a:hover {
 }
 
 p {
-    color: #34495e; 
+    color: #24303c; 
 }
 
 
@@ -53,13 +90,13 @@ fieldset {
 
 legend {
     font-weight: bold;
-    color: #2c3e50; 
+    color: #ebeff3; 
 }
 
 label {
     display: block;
     margin-bottom: 5px;
-    color: #34495e; 
+    color: #ebeff3; 
 }
 
 input[type="text"],
@@ -69,15 +106,14 @@ textarea,
 input[list] {
     width: 100%;
     padding: 10px;
-    border: 1px solid #bdc3c7; 
+    border: 1px solid #4cd389; 
     border-radius: 4px;
     box-sizing: border-box;
     margin-bottom: 10px;
 }
 
 input[type="button"] {
-    background-color: #27ae60; 
-    color: white;
+    color: #27ae60; 
     border: none;
     border-radius: 4px;
     padding: 10px;
@@ -85,18 +121,16 @@ input[type="button"] {
     width: 100%;
 }
 
-input[type="button"]:hover {
-    background-color: #219653; 
-}
 caption {
     border: 1px solid #bdc3c7; 
     padding: 10px;
     text-align: left;
-    background-color: #6a549e; 
-    color: #0c0d0e; 
+    background-color: #2b1b50; 
+    color: #f2f3f5; 
 
 }
 table {
+    background-color: white;
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
@@ -109,8 +143,8 @@ th, td {
 }
 
 th {
-    background-color: #f1c40f; 
-    color: #2c3e50; 
+    background-color: #2f5e8d; 
+    color: #f2f3f5; 
 }
 
 footer {

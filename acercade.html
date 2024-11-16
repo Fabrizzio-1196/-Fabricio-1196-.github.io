@@ -17,8 +17,8 @@
         <h2 class="sticky-nav"><a href="index.html">Inicio</a></h2>
     </nav>
 
-    
     <div class="row">
+        <!-- Columna principal -->
         <div class="column middle">
             <h2>Valcheta es llamada “Oasis de la Línea Sur”.</h2>
             <div class="content-scroll">
@@ -39,24 +39,38 @@
                 
             </div>
         </div>
-        
+
+        <!-- Columna Lateral -->
         <div class="column side">
-            <img src="Imagenparalab2.jpg" alt="Imagen de Fabricio" class="profile-image">
-            <h2>Sobre mí</h2>
-            <p>Mi nombre es Fabricio Daian Abello, vivo en Valcheta y tengo 27 años.
-                Nací el 11/12/1996. 
-               Mi título secundario es: perito mercantil con especialidad auxiliar en administración. 
-               Soy empleado municipal y trabajo en el área de producción, también soy representante del sindicato (ATE).
-               Tengo un taller en el que me dedico a la mecánica de motos. 
-               Mi objetivo es terminar la carrera.
-               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate unde itaque rem vel, fugiat architecto a numquam amet dignissimos accusamus quis illo, nesciunt provident deleniti similique ullam ab quasi animi.
-               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore fugit id veritatis unde voluptatibus perferendis placeat labore fuga amet sed et quaerat, blanditiis debitis quod dicta necessitatibus nemo, voluptatem expedita?
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ipsa, asperiores quaerat magni culpa minus perspiciatis voluptates vero, nisi voluptas praesentium omnis delectus officiis libero rem vel assumenda consectetur repudiandae?
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, praesentium magnam laboriosam ipsa accusantium illum. Consequuntur rem sed quod, reiciendis blanditiis vero ducimus fugit voluptatibus dignissimos, maiores minus officia fuga.
-            </p>
+            
+            <div class="content">
+                <img src="Imagenparalab2.jpg" alt="Imagen de Fabricio" class="profile-image">
+                <p id="text">
+                    Sobre mí
+                Mi nombre es Fabricio Daian Abello, vivo en Valcheta y tengo 27 años...
+                Nací el 11/12/1996. Mi título secundario es: perito mercantil con especialidad auxiliar en administración...
+                Mi objetivo es terminar la carrera.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore fugit id veritatis unde voluptatibus perferendis placeat labore fuga amet sed et quaerat...<br> 
+                <span id="moreText" class="more">  Currículum Vitae: <br>
+                    Nombre: Fabricio Daian Abello<br>
+                    Edad: 27 años<br>
+                    Email: correo@dominio.com<br>
+                    Teléfono/celular: (123) 456-7890<br>
+                    Estado civil: Soltero<br>
+                .</span>
+                    <span id="moremoreText" class="more">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, iste assumenda. Nostrum earum nam quos hic qui dolor deleniti quae architecto. 
+                    Explicabo libero quos cupiditate perspiciatis exercitationem sed odit quam.
+                </span>
+                </p>
+                <button onclick="toggleText()" id="readMoreBtn">Leer más</button>
+                <button onclick="revealFullText()" id="readMoreMoreBtn" style="display:none;">Leer texto completo</button>
+            </div>
+    
         </div>
 
     </div>
+
+    <script src="script2.js"></script>
     
     <footer>
         <ul>
